@@ -1,0 +1,8 @@
+# Ignore by default
+*
+
+# Exceptions:
+!requirements.txt
+!hellofly.py
+!templates
+!wsgi.py
