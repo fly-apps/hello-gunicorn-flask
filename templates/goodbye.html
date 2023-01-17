@@ -6,6 +6,6 @@
   </head>
   <body>
     <h1>You say goodbye</h1>
-      <p>But I say <a href="{{ url_for('hello/{{name}}') }}">hello.</a></p>
+    <p>But I say <a href="{% if name %}{{ url_for('hello', name=name) }}{% else %}{{ url_for('hello') }}{% endif %}">hello{% if name %}, {{name}}{% endif %}.</a></p>
   </body>
 </html>

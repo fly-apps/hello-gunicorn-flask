@@ -18,7 +18,9 @@ EXPOSE 4999
 
 #ENTRYPOINT ["flask", "run", "--host=0.0.0.0", "--port", "4999"] # ["/bin/sh"]  
 
-ENV GUNICORN_CMD_ARGS="--bind=0.0.0.0:4999 --workers=2"
+# ENV GUNICORN_CMD_ARGS="--bind=0.0.0.0:4999 --workers=2"
+# Bind to both IPv4 and IPv6
+ENV GUNICORN_CMD_ARGS="--bind=[::]:4999 --workers=2"
 
 # replace APP_NAME with module name
 CMD ["gunicorn", "wsgi:app"]
