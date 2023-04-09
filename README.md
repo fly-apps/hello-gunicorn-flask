@@ -12,7 +12,7 @@ $ cd hello-gunicorn-flask
 
 To deploy on Fly.io:
 
-We recommend using our Apps V2 platform for any new apps. You can check if your org defaults to Apps V2 deployments with `fly orgs apps-v2 show <org-slug>`. Get your organization slug using `fly orgs list`. To set your default to Apps V2, run `fly orgs apps-v2 default-on <org-slug>`.
+We recommend using our [Apps V2 platform](https://fly.io/docs/reference/apps/#apps-v2) for any new apps. You can check if your org defaults to Apps V2 deployments with `fly orgs apps-v2 show <org-slug>`. Get your organization slug using `fly orgs list`. To set your default to Apps V2, run `fly orgs apps-v2 default-on <org-slug>`.
 
 ```
 $ fly launch
